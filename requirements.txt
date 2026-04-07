@@ -1,0 +1,14 @@
+# Obsidian-WuKongManager Dependencies
+# This file is for reference - the scripts use only Python standard library
+
+# No external dependencies required!
+# All scripts use Python 3 standard library modules:
+# - os
+# - sys
+# - json
+# - argparse
+# - datetime
+# - shutil
+
+# Optional: For enhanced functionality
+# pip install click rich
