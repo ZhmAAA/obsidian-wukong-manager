@@ -123,4 +123,4 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ## 作者
 
-张黄铭 [@zhanghuangming](https://github.com/zhanghuangming)
+张黄铭
