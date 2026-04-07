@@ -1,0 +1,131 @@
+{
+  "nodes": [
+    {
+      "id": "start",
+      "type": "text",
+      "text": "🚀 项目启动\n\n定义目标\n收集需求",
+      "x": 0,
+      "y": 200,
+      "width": 200,
+      "height": 100,
+      "color": "green"
+    },
+    {
+      "id": "plan",
+      "type": "text",
+      "text": "📋 规划阶段\n\n分解任务\n资源分配",
+      "x": 300,
+      "y": 200,
+      "width": 200,
+      "height": 100,
+      "color": "blue"
+    },
+    {
+      "id": "execute",
+      "type": "text",
+      "text": "⚙️ 执行阶段\n\n开发产品\n测试验证",
+      "x": 600,
+      "y": 200,
+      "width": 200,
+      "height": 100,
+      "color": "orange"
+    },
+    {
+      "id": "review",
+      "type": "text",
+      "text": "🔍 回顾阶段\n\n评估结果\n总结经验",
+      "x": 900,
+      "y": 200,
+      "width": 200,
+      "height": 100,
+      "color": "purple"
+    },
+    {
+      "id": "group1",
+      "type": "group",
+      "text": "核心流程",
+      "x": -50,
+      "y": 100,
+      "width": 1200,
+      "height": 300,
+      "color": "gray"
+    },
+    {
+      "id": "doc-requirements",
+      "type": "file",
+      "file": "requirements.md",
+      "x": 0,
+      "y": 450,
+      "width": 200,
+      "height": 60,
+      "color": "yellow"
+    },
+    {
+      "id": "doc-design",
+      "type": "file",
+      "file": "design.md",
+      "x": 300,
+      "y": 450,
+      "width": 200,
+      "height": 60,
+      "color": "yellow"
+    },
+    {
+      "id": "doc-report",
+      "type": "file",
+      "file": "report.md",
+      "x": 900,
+      "y": 450,
+      "width": 200,
+      "height": 60,
+      "color": "yellow"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "start",
+      "toNode": "plan",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "需求明确"
+    },
+    {
+      "id": "e2",
+      "fromNode": "plan",
+      "toNode": "execute",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "开始执行"
+    },
+    {
+      "id": "e3",
+      "fromNode": "execute",
+      "toNode": "review",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "完成开发"
+    },
+    {
+      "id": "e4",
+      "fromNode": "doc-requirements",
+      "toNode": "plan",
+      "fromSide": "top",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e5",
+      "fromNode": "plan",
+      "toNode": "doc-design",
+      "fromSide": "bottom",
+      "toSide": "top"
+    },
+    {
+      "id": "e6",
+      "fromNode": "review",
+      "toNode": "doc-report",
+      "fromSide": "bottom",
+      "toSide": "top"
+    }
+  ]
+}
